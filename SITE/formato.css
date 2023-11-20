@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header{
+  font-family: 'Montserrat', sans-serif;
+}
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1b1b1b;
+  }
+  
+  .header-principal{
+   flex-direction: row;
+   text-decoration: dashed;  
+   font-size: 23px;
+  }
+  
+ .menu{
+    padding: 5px 1px;
+    padding-top: 15px;
+    background-color: #272727;
+  }
+  
+  .lista-principal{
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  
+  .item-lista{
+    list-style: none;
+  }
+  
+  .link-lista{
+    color: #ffffff; 
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .link-lista:hover{
+    color: #0073ff;
+    font-size: 25px;
+    cursor:pointer;
+    transition: 0.2s linear;
+  }
+  
+  
+  .menu-principal {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+  }
+  
+  
+  .image {
+    width: 100px; 
+    height: 100px;
+    margin-right: 10px;
+  
+  }
+  
+  .titulo-principal {
+    font-size: 70px;
+    padding: 3px 10px;
+    display: flex;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    color: #0073ff;
+    font-family: 'Kalam', cursive;
+
+    
+  }
+  
+  .texto-2{
+    color: #78a1d3;
+    padding: 0px;
+    font-size: 30px;
+  }
+
+  .texto-3{
+    padding: 0px;
+    font-size: 25px;
+    color: #78a1d3;
+  }
+ 
+  
+  .parte-principal{
+    display:flex;
+    align-items: center;
+  }
+  
+  .logo{
+    width: 130px;
+    height: 130px;
+    position: fixed center;
+    margin-bottom: 20px;
+  }
+  
+  
+  form {
+    margin: 15px;
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    width: 95%;
+    color: #0073ff;
+    
+  }
+  
+  .botao {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    color: #ffffff;
+  
+  }
+  
+  .btn {
+    width: fit-content;
+    margin: 5px;
+    color: #ffffff;
+    
+  
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
+  }
+  
+  @media screen and (max-width: 900px) {
+  
+    .main{
+      padding-left: 5px;
+    }
+    body{
+      font-size: small;
+    }
+    
+    }

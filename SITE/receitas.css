@@ -1,0 +1,40 @@
+
+main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fundo {
+    margin: 10px;
+    width: 350px;
+    height: 480px;
+    background-color:#f6e4b3;;
+    border-radius: solid 50px;
+    border-color: rgba(27, 22, 16, 0.795);
+  }
+  .img-receita {
+    object-fit: cover;
+    height: 180px;
+    margin-top: 10px;
+  }
+  .titulo-receita {
+    text-align: center;
+    font-weight: bold;
+  }
+  .texto-receita {
+    text-align: justify;
+    padding: 2px;
+    margin: 2px;
+    font-size: 17px;
+  }
+  @media (max-width: 575px) {
+    main {
+      margin-top: 70px;
+      padding-bottom: 30px;
+      height: auto;
+    }
+    .fundo {
+      margin: 10px;
+      width: 200px;
+      height: 450px;
+    }
+  }

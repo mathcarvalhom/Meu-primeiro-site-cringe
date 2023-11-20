@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formato.css">
+</head>
+<body>
+    <header class="header-principal">
+        <nav class = "menu">
+            <ul class ="lista-principal">
+                <li class="item-lista"><a class="link-lista" href="home.html">Home</a></li>
+                <li class="item-lista"><a class="link-lista" href="receitas.html">Receitas</a></li>
+                <li class="item-lista"><a class="link-lista" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="cadastro" role="main navigation">
+        <form action="https://formspree.io/f/xyyqojab"method="POST">
+        <form id="form-cadastro">
+            <h1>Efetue o seu cadastro</h1>
+            <br>
+            <div class="row mb-2">
+                <label class="col-2 col-form-label" for="Nome">Nome</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="Nome" placeholder="Nome Completo" id="nome" autofocus required placeholder>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label class="col-2 col-form-label" for="E-mail">Email</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" name="E-mail" placeholder="@ E-mail" id="E-mail" autofocus required placeholder>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label class="col-2 col-form-label" for ="cep">CEP</label>
+                <div class="col-6">
+                    <input class="form-control" type="text" placeholder="CEP" id="cep" id="cep" maxlength="10" required onblur="pesquisacep(this)">
+                </div>
+            </div>
+            <div class ="row mb-2">
+                <label for="rua" class="col-2 col-form-label">Rua</label>
+                <div class="col-10">
+                    <input type="text" class="form-control" placeholder="Rua" id="Rua" required>
+                </div>
+            </div>
+            <div class="form-group row mb-2">
+                <label class ="col-sm-2 col-form-label" label for="Nº">Nº</label>
+                <div class="col-sm-2">
+                    <input class ="form-control" type="number" placeholder="Nº" id="numero" required>
+            </div>
+            <label class="col-sm-3 col-form label" for="Complemento">Complemento</label>
+            <div class="col-sm-5">
+                <input class="form-control" type="text"placeholder="Complemento" id="complemento">
+                </div>
+            </div>
+            <div class="form-group row mb-2">
+                <label class="col-sm-2 col-form-label" label for="cidade">Cidade</label>
+                <div class="col-sm-2">
+                    <input class="form-control"type ="text " placeholder="Cidade" id="cidade" required>
+                </div>
+                <label class="col-sm-3 col-form-label" for="UF">UF</label>
+                <div class="col-sm-5">
+                    <select class="form-select" name="UF" placeholder="" id="UF" maxlength="10" required >
+                        <option value="estado">Selecione</option>
+                
+                        <option value="ac">Acre</option> 
+                
+                        <option value="al">Alagoas</option> 
+               
+                        <option value="am">Amazonas</option> 
+               
+                        <option value="ap">Amapá</option> 
+                
+                        <option value="ba">Bahia</option> 
+                
+                        <option value="ce">Ceará</option> 
+                
+                        <option value="df">Distrito Federal</option> 
+                
+                        <option value="es">Espírito Santo</option> 
+                
+                        <option value="go">Goiás</option> 
+                
+                        <option value="ma">Maranhão</option> 
+                
+                        <option value="mt">Mato Grosso</option> 
+                
+                        <option value="ms">Mato Grosso do Sul</option> 
+                
+                        <option value="mg">Minas Gerais</option> 
+                
+                        <option value="pa">Pará</option> 
+                
+                        <option value="pb">Paraíba</option> 
+                
+                        <option value="pr">Paraná</option> 
+                
+                        <option value="pe">Pernambuco</option> 
+                
+                        <option value="pi">Piauí</option> 
+                
+                        <option value="rj">Rio de Janeiro</option> 
+                
+                        <option value="rn">Rio Grande do Norte</option> 
+                
+                        <option value="ro">Rondônia</option> 
+                
+                        <option value="rs">Rio Grande do Sul</option> 
+                
+                        <option value="rr">Roraima</option> 
+                
+                        <option value="sc">Santa Catarina</option> 
+                
+                        <option value="se">Sergipe</option> 
+                
+                        <option value="sp">São Paulo</option> 
+                
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="botao">
+                <button type="reset" class="btn btn-danger">Limpar</button>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </main>
+        <footer>
+            &copy; Bigode 2023.
+        </footer>
+        
+    </body>
+    </body>
+</html>
